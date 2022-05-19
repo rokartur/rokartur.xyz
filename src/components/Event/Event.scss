@@ -1,0 +1,112 @@
+.event {
+  margin: 0 0 112px 0;
+  display: flex;
+  flex-direction: column;
+  height: 208px;
+  width: 550px;
+}
+
+.event_date {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  font-feature-settings: 'salt' on;
+
+  color: #F3F4F6;
+}
+
+.event_tag {
+  margin: 12px 0 16px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .event_tag_icon {
+    margin-right: 6px;
+  }
+}
+
+#nov_2018,
+#jan_2019,
+#jan_2020,
+#apr_2021,
+#dec_2021,
+#now {
+  padding: 6px 12px 6px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+#nov_2018 {
+  background-color: #FEF3C7;
+  color: #F59E0B;
+}
+
+#jan_2019 {
+  background-color: #0074B8;
+  color: #FFFFFF;
+}
+
+#jan_2020 {
+  background-color: #BBF7D0;
+  color: #16A34A;
+}
+
+#apr_2021 {
+  background-color: #5AC9E8;
+  color: #007FA3;
+}
+
+#dec_2021 {
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+}
+
+#now {
+  background-color: #FECACA;
+  color: #DC2626;
+}
+
+.event_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  font-feature-settings: 'salt' on;
+
+  color: #F3F4F6;
+}
+
+.event_description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+
+  font-feature-settings: 'salt' on;
+
+  color: #9CA3AF;
+}

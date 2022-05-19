@@ -1,0 +1,28 @@
+.navigation_bar {
+  margin: 24px 0 24px 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: right;
+  transition-duration: 500ms;
+
+  .navigation_items {
+    margin: 0;
+    padding: 0;
+  }
+
+  #social_media_icon {
+    margin: 0 18px 0 18px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 80%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    transition-duration: 500ms;
+  }
+}

@@ -1,0 +1,142 @@
+.buttons {
+  margin: 0 0 200px 0;
+  padding: 0;
+
+  top: 630px;
+
+  position: absolute;
+  display: flex;
+  gap: 100px;
+  transition-duration: 500ms;
+
+  @media (min-width: 1920px) {
+    left: 400px;
+  }
+
+  @media (max-width: 1919px) {
+    left: 270px;
+  }
+
+  @media (max-width: 1700px) {
+    left: 230px;
+  }
+
+  @media (max-width: 1630px) {
+    left: 200px;
+  }
+
+  @media (max-width: 1575px) {
+    left: 400px;
+  }
+
+  @media (max-width: 1200px) {
+    position: relative;
+    top: 75px;
+    left: 0;
+    justify-content: center;
+  }
+
+  @media (max-width: 700px) {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 35px;
+    z-index: unset;
+  }
+
+}
+
+.button_me,
+.button_experience,
+.button_projects {
+  height: 128px;
+  width: 128px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  border-radius: 12px;
+  border: none;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  transition-duration: 500ms;
+
+  &:hover {
+    scale: 1.05;
+
+    .button_blur_me {
+      border: 1.5px solid #86EFAC;
+    }
+    .button_blur_experience {
+      border: 1.5px solid #9B9DFD;
+    }
+    .button_blur_projects {
+      border: 1.5px solid #F87171;
+    }
+  }
+
+  &:active {
+    scale: 1.05;
+
+    .button_blur_me {
+      border: 2px solid #86EFAC;
+    }
+    .button_blur_experience {
+      border: 2px solid #9B9DFD;
+    }
+    .button_blur_projects {
+      border: 2px solid #F87171;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.button_label {
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.button_text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: 'salt' on;
+}
+
+.button_blur_me,
+.button_blur_experience,
+.button_blur_projects {
+  position: absolute;
+  z-index: 1;
+  border-radius: 12px;
+  transition-duration: 500ms;
+}
+
+#text_me {
+  color: #86EFAC;
+}
+
+#text_experience {
+  color: #9B9DFD;
+}
+
+#text_projects {
+  color: #F87171;
+}

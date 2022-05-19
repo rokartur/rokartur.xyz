@@ -1,0 +1,43 @@
+.global_subpage_header {
+  height: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.subpage_text {
+  margin: 36px 0 0 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1000px) {
+    align-items: center;
+  }
+}
+
+.title {
+  margin: 0 0 10px 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+
+  letter-spacing: -0.02em;
+
+  color: #F3F4F6;
+}
+
+.overline_blue,
+.overline_red,
+.overline_green {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

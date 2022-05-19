@@ -1,0 +1,19 @@
+.overline_blue {
+  color: #7375FD;
+}
+
+.timeline {
+  margin: 72px 0 0 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+}
+
+.clock_line {
+  margin: 2px 32px 0 0;
+}
+
+.to_next_page {
+  display: flex;
+  justify-content: right;
+}

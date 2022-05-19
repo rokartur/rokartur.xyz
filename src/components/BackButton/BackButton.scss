@@ -1,0 +1,58 @@
+.back_button_me,
+.back_button_experience,
+.back_button_projects {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  background: none;
+
+  height: 32px;
+  width: 90px;
+
+  @media (max-width: 1000px) {
+    margin: 25px;
+  }
+
+  .back_button_me_text,
+  .back_button_experience_text,
+  .back_button_projects_text {
+    margin: 0 0 0 12px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .back_button_me_text {
+    color: #4ADE80;
+  }
+
+  .back_button_experience_text {
+    color: #7375FD;
+  }
+
+  .back_button_projects_text {
+    color: #F87171;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

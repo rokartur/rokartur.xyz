@@ -1,0 +1,25 @@
+.shapes {
+  width: 620px;
+  height: 580px;
+
+  position: absolute;
+  top: 350px;
+  right: 200px;
+  transition-duration: 500ms;
+
+  @media (max-width: 1919px) {
+    right: 130px;
+  }
+
+  @media (max-width: 1700px) {
+    right: 100px;
+  }
+
+  @media (max-width: 1630px) {
+    right: 50px;
+  }
+
+  @media (max-width: 1575px) {
+    display: none;
+  }
+}
