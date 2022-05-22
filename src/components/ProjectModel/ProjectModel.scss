@@ -60,6 +60,7 @@
   border-radius: 6px;
   width: 340px;
   height: 215px;
+  object-fit: cover;
 
   @media (max-width: 550px) {
     width: 285px;
