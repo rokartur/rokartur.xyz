@@ -15,7 +15,7 @@ export default function Projects() {
 
             <SubpageText title="My all works" overline="The most interesting" color="red"/>
 
-            <div className="projects_list_1">
+            <div className="projects_list">
                 <ProjectModel
                     icon={ExmapleIcon}
                     title="bongocat.xyz"
@@ -34,8 +34,6 @@ export default function Projects() {
                     category="Website"
                     mainImage={ExmapleIcon}
                 />
-            </div>
-            <div className="projects_list_2">
                 <ProjectModel
                     icon={ExmapleIcon}
                     title="bongocat.xyz"

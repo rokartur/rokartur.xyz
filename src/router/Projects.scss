@@ -15,11 +15,15 @@
     margin: 0 50px 0 50px;
   }
 
-  @media (max-width: 1299px) {
-    margin: 0 300px 0 300px;
+  @media (max-width: 1250px) {
+    margin: 0 180px 0 180px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1130px) {
+    margin: 0 100px 0 100px;
+  }
+
+  @media (max-width: 980px) {
     margin: 0;
   }
 }
@@ -28,44 +32,33 @@
   color: #F87171;
 }
 
-.projects_list_1 {
-  margin: 76px 0 0 0;
-
+.projects_list {
+  margin: 76px 0 120px 0;
   display: grid;
-  justify-content: left;
-  grid-template-columns: auto auto auto;
-  gap: 156px;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 78px;
   transition-duration: 500ms;
 
-  @media (max-width: 1919px) {
-    justify-content: space-between;
-    gap: unset;
+  @media (max-width: 2200px) {
+    row-gap: 46px;
   }
 
-  @media (max-width: 1299px) {
-    gap: 40px;
+  @media (max-width: 2100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1300px) {
+    row-gap: 20px;
+  }
+
+  @media (max-width: 1250px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 980px) {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    grid-template-columns: auto;
-  }
-}
-
-.projects_list_2 {
-  margin: 76px 0 150px 0;
-
-  display: grid;
-  justify-content: left;
-  grid-template-columns: auto auto auto;
-  gap: 156px;
-  transition-duration: 500ms;
-
-  @media (max-width: 1919px) {
-    justify-content: space-between;
-    gap: unset;
-  }
-
-  @media (max-width: 1299px) {
-    gap: 40px;
-    justify-content: center;
-    grid-template-columns: auto;
+    flex-direction: column;
   }
 }

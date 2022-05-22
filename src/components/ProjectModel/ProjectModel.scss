@@ -1,4 +1,6 @@
 .project_model {
+  width: 340px;
+  height: 273px;
   margin: 0;
   padding: 28px 18px 28px 18px;
   display: flex;
@@ -11,6 +13,11 @@
 
   &:hover {
     border: 2px solid rgba(248, 113, 113, 0.7);
+  }
+
+  @media (max-width: 980px) {
+    width: unset;
+    height: unset;
   }
 }
 
