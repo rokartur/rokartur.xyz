@@ -7,7 +7,7 @@ import "./Experience.scss";
 
 export default function Experience() {
     return (
-        <div>
+        <div className="experience">
             <header className="global_subpage_header">
                 <BackButtonExperience/>
             </header>
