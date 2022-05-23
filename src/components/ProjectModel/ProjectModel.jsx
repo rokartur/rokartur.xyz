@@ -8,7 +8,7 @@ export class ProjectModel extends Component {
             textDecoration: "none",
         }
         return (
-            <Link to="/" style={textStyle} className="project_model_link">
+            <Link to={this.props.link} style={textStyle} className="project_model_link">
                 <div className="project_model">
                     <div className="project_label">
                         <img src={this.props.icon} alt="" className="project_icon"/>

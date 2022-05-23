@@ -49,6 +49,11 @@ export class BackButtonExperience extends Component {
 }
 
 export class BackButtonProjects extends Component {
+    componentDidMount() {
+        window.scrollTo({
+            top: 0,
+        });
+    }
     render() {
         const textStyle = {
             textDecoration: "none",

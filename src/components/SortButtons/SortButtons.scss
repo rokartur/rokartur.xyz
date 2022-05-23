@@ -1,0 +1,66 @@
+.sort_buttons_center {
+  display: flex;
+  justify-content: left;
+  transition-duration: 500ms;
+
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
+}
+
+.sort_buttons {
+  width: 287px;
+  margin: 64px 0 0 0;
+  padding: 11.25px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  border-radius: 10px;
+  background: rgba(17, 24, 39, 0.25);
+  transition-duration: 500ms;
+}
+
+.sort_button,
+.sort_button_active {
+  margin: 0;
+  padding: 7.5px 11.25px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  column-gap: 8px;
+
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+
+  transition-duration: 500ms;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.sort_button_active {
+  .sort_button_icon svg path {
+    fill: #F87171;
+    transition-duration: 500ms;
+  }
+  background: #111827;
+}
+
+.sort_button_text {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  color: #F3F4F6;
+  transition-duration: 500ms;
+}
