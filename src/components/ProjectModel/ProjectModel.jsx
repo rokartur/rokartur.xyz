@@ -5,7 +5,7 @@ import "./ProjectModel.scss";
 export class ProjectModel extends Component {
     render() {
         const textStyle = {
-            textDecoration: "none",
+            textDecoration: "none"
         }
         return (
             <Link to={this.props.link} style={textStyle} className="project_model_link">

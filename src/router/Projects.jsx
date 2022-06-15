@@ -5,42 +5,40 @@ import {BackButtonProjects} from "../components/BackButton/BackButton";
 import {SubpageText} from "../components/SubpageText";
 import {SortButtons} from "../components/SortButtons/SortButtons";
 import {ProjectModel} from "../components/ProjectModel/ProjectModel";
-import ExampleIcon from "../assets/images/avatar.png";
+
+import BongocatIcon from "../assets/images/bongocat_icon.png";
+import BongocatMain from "../assets/images/bongocat_main.png";
+import NethizerIcon from "../assets/images/nethizer_icon.png";
+import NethizerMain from "../assets/images/nethizer_main.png";
+import MechanikTGIcon from "../assets/images/mechaniktg_icon.png";
+import MechanikTGMain from "../assets/images/mechaniktg_main.png";
 
 export default function Projects() {
     const [category, setCategory] = useState(0);
     const projectsList = [
         {
-            icon: ExampleIcon,
+            icon: BongocatIcon,
             title: "bongocat.xyz",
             category: "Website",
             categoryID: 1,
-            mainImage: ExampleIcon,
-            link: "bongocat",
+            mainImage: BongocatMain,
+            link: "/projects/bongocat",
         },
         {
-            icon: ExampleIcon,
-            title: "kanyon.pl",
-            category: "Website",
-            categoryID: 1,
-            mainImage: ExampleIcon,
-            link: "kanyon",
-        },
-        {
-            icon: ExampleIcon,
+            icon: NethizerIcon,
             title: "nethizer.pl",
             category: "Website",
             categoryID: 1,
-            mainImage: ExampleIcon,
-            link: "nethizer",
+            mainImage: NethizerMain,
+            link: "/projects/nethizer",
         },
         {
-            icon: ExampleIcon,
+            icon: MechanikTGIcon,
             title: "mechaniktg.pl",
             category: "Website",
             categoryID: 1,
-            mainImage: ExampleIcon,
-            link: "mechaniktg",
+            mainImage: MechanikTGMain,
+            link: "/projects/mechaniktg",
         },
     ]
 

@@ -1,6 +1,6 @@
-import {BackButtonProjects} from "../../../components/BackButton/BackButton";
+import {BackButtonProjects} from "../../components/BackButton/BackButton";
 
-export default function Bongocat() {
+export default function MechanikTG() {
     return (
         <div className="bongocat">
             <header className="global_subpage_header">
