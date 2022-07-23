@@ -1,6 +1,5 @@
 .project_model {
-  width: 340px;
-  height: 273px;
+  width: 312px;
   margin: 0;
   padding: 28px 18px 28px 18px;
   display: flex;
@@ -9,7 +8,8 @@
   background: #111827;
   border: 2px solid #1F2A36;
   border-radius: 12px;
-  transition-duration: 500ms;
+
+  transition-duration: 350ms;
 
   &:hover {
     border: 2px solid rgba(248, 113, 113, 0.7);
@@ -61,16 +61,4 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #9CA3AF;
-}
-
-.project_main_image {
-  border-radius: 6px;
-  width: 340px;
-  height: 215px;
-  object-fit: cover;
-
-  @media (max-width: 550px) {
-    width: 285px;
-    height: 180px;
-  }
 }

@@ -21,7 +21,6 @@ export class ProjectModel extends Component {
                             </span>
                         </div>
                     </div>
-                    <img src={this.props.mainImage} alt="" className="project_main_image"/>
                 </div>
             </Link>
         )
